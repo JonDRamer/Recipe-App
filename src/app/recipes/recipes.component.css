@@ -1,0 +1,11 @@
+.recipeContainer {
+  margin-top: 5vh;
+}
+
+.recipeList {
+  background-color: yellow;
+}
+
+.recipeDetail {
+  background-color: red;
+}
