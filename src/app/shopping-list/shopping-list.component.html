@@ -2,7 +2,7 @@
   <div class="14 wide column">
     <app-shopping-edit></app-shopping-edit>
     <ul class="ui list">
-      <a class="item" style="cursor: pointer;"><li>Item 1</li></a>
+      <a class="item" style="cursor: pointer;" *ngFor="let ingredient of ingredients">{{ ingredient.name }} ({{ ingredient.amount }})</a>
     </ul>
   </div>
 </div>
