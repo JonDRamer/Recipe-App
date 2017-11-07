@@ -3,11 +3,8 @@
     <button class="ui button">New Recipe</button>
   </div>
   <div class="sixteen wide column">
-    <a href="#" class="ui list" *ngFor="let recipe of recipes">
-      <img class="ui fluid image" src="{{ recipe.imagePath }}" alt="{{ recipe.name }}" style="max-width: 200px">
-      <h4>{{ recipe.name }}</h4>
-      <p>{{ recipe.description }}</p>
-    </a>
-    <app-recipe-item></app-recipe-item>
+    <app-recipe-item
+    *ngFor="let recipeElement of recipes"
+    [recipe]="recipeElement"></app-recipe-item>
   </div>
 </div>
