@@ -3,9 +3,9 @@
 }
 
 .recipeList {
-  background-color: yellow;
+  border: 1px solid black;
 }
 
 .recipeDetail {
-  background-color: red;
+  border: 1px solid black;
 }
