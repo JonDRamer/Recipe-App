@@ -1,8 +1,13 @@
 <div class="ui stackable grid recipeContainer">
   <div class="seven wide column recipeList">
-    <app-recipe-list></app-recipe-list>
+    <app-recipe-list
+      (recipeWasSelected)="selectedRecipe = $event"></app-recipe-list>
   </div>
   <div class="nine wide column recipeDetail">
-    <app-recipe-detail></app-recipe-detail>
+    <app-recipe-detail
+      *ngIf="selectedRecipe; else infoText"></app-recipe-detail>
+    <ng-template #infoText>
+      <p>Please select a recipe!</p>
+    </ng-template>
   </div>
 </div>
