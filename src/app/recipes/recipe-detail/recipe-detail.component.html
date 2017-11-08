@@ -6,7 +6,13 @@
     <h1>{{ recipe.name }}</h1>
   </div>
   <div class="sixteen wide column">
-    <div class="ui selection dropdown">
+    <div class="sixteen wide column">
+      {{ recipe.description }}
+    </div>
+    <div class="sixteen wide column">
+      {{ recipe.ingredients }}
+    </div>
+    <div class="ui selection dropdown" appDropdown>
       <input type="hidden" name="gender">
       <i class="dropdown icon"></i>
       <div class="default text">Manage</div>
@@ -25,11 +31,5 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="sixteen wide column">
-    {{ recipe.description }}
-  </div>
-  <div class="sixteen wide column">
-    {{ recipe.ingredients }}
   </div>
 </div>
