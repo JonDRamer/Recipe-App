@@ -3,14 +3,14 @@
     <form class="ui form">
       <div class="5 wide column field">
         <label for="name">Name</label>
-        <input type="text" id="name">
+        <input type="text" id="name" #nameInput>
       </div>
       <div class="11 wide column field">
         <label for="amount">Amount</label>
-        <input type="number" id="amount">
+        <input type="number" id="amount" #amountInput>
       </div>
       <div class="16 wide column field">
-        <button type="submit" class="positive ui button">Add</button>
+        <button type="submit" class="positive ui button" (click)="onAddItem()">Add</button>
         <button type="button" class="ui red button">Delete</button>
         <button type="button" class="ui primary button">Clear</button>
       </div>

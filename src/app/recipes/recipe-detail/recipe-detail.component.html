@@ -1,9 +1,9 @@
 <div class="ui stackable grid">
   <div class="sixteen wide column">
-    <img class="ui fluid image" src="" alt="">
+    <img class="ui image" [src]="recipe.imagePath" alt="{{ recipe.name }}" style="max-height: 300px">
   </div>
   <div class="sixteen wide column">
-    <h1>Recipe Name</h1>
+    <h1>{{ recipe.name }}</h1>
   </div>
   <div class="sixteen wide column">
     <div class="ui selection dropdown">
@@ -27,9 +27,9 @@
     </div>
   </div>
   <div class="sixteen wide column">
-    Description
+    {{ recipe.description }}
   </div>
   <div class="sixteen wide column">
-    Ingredients
+    {{ recipe.ingredients }}
   </div>
 </div>
