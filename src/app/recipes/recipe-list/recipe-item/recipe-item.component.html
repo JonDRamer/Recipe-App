@@ -1,7 +1,9 @@
-<a class="item recipeItem"
-   (click)="onSelected()">
-  <h4>{{ recipe.name }}
-    <img class="ui circular mini right floated image" src="{{ recipe.imagePath }}" alt="{{ recipe.name }}" >
-  </h4>
-  <p>{{ recipe.description }}</p>
-</a>
+<div class="item recipeItem">
+  <a
+     (click)="onSelected()">
+    <h4>{{ recipe.name }}
+      <img class="ui circular mini right floated image" src="{{ recipe.imagePath }}" alt="{{ recipe.name }}" >
+    </h4>
+    <p>{{ recipe.description }}</p>
+  </a>
+</div>
