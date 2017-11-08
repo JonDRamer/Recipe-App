@@ -5,3 +5,7 @@ a {
 a:hover {
   color: blue;
 }
+
+.recipeItem {
+  margin: 20px;
+}
